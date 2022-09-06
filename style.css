@@ -11,10 +11,10 @@
 
 .top-section{
 background-color:#7030cc;
-border-top-left-radius: 40px;
-border-top-right-radius: 40px;
+border-radius: 20px;
 height:700px;
 color:#ffffff;
+width:100%;
 
 }
 
@@ -30,7 +30,10 @@ color:#ffffff;
 .ul-items{
     display:flex;
     list-style:none;
+}
 
+.toggle-btn{
+display:none;
 }
 
 .list-items{
@@ -61,7 +64,6 @@ margin-top:50px;
     font-size:4rem;
     margin-top:30px;
     margin-bottom:20px;
-
 }
 
 .codext-img{
@@ -165,4 +167,139 @@ border-radius: 20px;
 
 
 
+    /* ------------------media queries ----------------------------- */
+
+
+
+@media screen and (max-width:550px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .top-section{
+        height:250px;
+        width:100vw;
+        }
+
+    .ul-items{
+        display:none;
+    }
+
+
+.codext-content{
+    display:flex;
+    width: 100%;
+    align-content: center;
+}
+.codext-lefttext{
+    margin-left:20px;
+    width:40%;
+    margin:30px;
+    }
+
+    .codext-lefttext h1{
+        font-size:1.5rem;
+        
+    }
+    .codext-prgh{
+        display: none;
+    }
+    .codext-img{
+        width:50%;
+    }
+    .weprovide-text{
+        font-size:1.6rem;
+    }
+   
+    .operating-hdng{
+        font-size:1.6rem;
+    }
+.operating-features{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.operating-features img{
+    width:90%;
+
+}
+
+.cards-specs{
+    display:flex;
+   flex-wrap: wrap;
+   gap:30px;
+   justify-content: space-around;
+}
+
     
+}
+
+@media screen and (max-width:800px){
+    .top-section{
+   width:100%;
+   height:650px;
+    }
+
+    .ul-items{
+        display:none;
+    }
+    .toggle-btn{
+        display:flex;
+        width:30px;
+        height:30px;
+        cursor: pointer;
+        }
+
+        .codext-content{
+            display:flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .codext-lefttext{
+        width:50%;
+        margin:auto 30px;
+        }
+        .codext-lefttext h1{
+            font-size:1.8rem;
+        }
+        
+        .codext-img{
+            width:50%;
+            height:550px;
+        }
+        .operating-features{
+            width:90%;
+            margin:20px auto;
+        }
+        .operating-features img{
+            width:45%;
+        }
+        .operating-hdng{
+            font-size:1.4rem;
+        }
+
+        .cards-specs{
+            display:flex;
+            justify-content:center;
+            margin-bottom:20px;
+        
+        }
+        .card-futrs{
+            margin-right:10px;
+  
+        }
+}
+
+@media screen and (max-width:1050px){
+
+    .top-section{
+        width:100%;
+         }
+         .codext-lefttext h1{
+            font-size:1.8rem;
+            
+        }
+      
+}
